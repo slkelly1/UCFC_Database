@@ -24,14 +24,6 @@
             >CC BY-NC-SA license</a
           >, unless stated otherwise
         </p>
-  
-        <h2>Find out more</h2>
-        <p>
-        Learn how to collaborate with the 
-        World Ichneumonidae Database. 
-        Contact information, technical details, and more are available 
-        </p>
-  
       </div>
     </section>
   </template>

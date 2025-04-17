@@ -10,7 +10,7 @@
               <span class="text-base-soft">2025-04-17</span>
               <p>
                     We are finally live! Check our specimens list
-                <RouterLink to="meetings">here</RouterLink>.
+                <RouterLink to="https://slkelly1.github.io/UCFC_Database/#/otus/1079019/overview">here</RouterLink>.
               </p>
             </VCardContent>
           </VCard>
