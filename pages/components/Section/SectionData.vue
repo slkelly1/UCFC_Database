@@ -66,11 +66,6 @@
       label: 'References',
       count: 15500
     },
-    [TYPES.citations]: {
-      icon: IconCitation,
-      label: 'Citations',
-      count: 250000
-    },
     [TYPES.images]: {
       icon: IconImage,
       label: 'Images',
