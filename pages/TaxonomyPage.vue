@@ -14,8 +14,8 @@
   
   <script setup>
   import { ref, onMounted } from 'vue'
-  import SectionTree from '@/components/Section/Tree/SectionTree.vue' // <-- same component as the panel!
-  import TaxonWorks from '@/services/TaxonWorks'
+  import SectionTree from '~/components/Section/Tree/SectionTree.vue' // <-- same component as the panel!
+  import TaxonWorks from '../../../services/TaxonWorks'
   
   const taxonomy = ref(null)
   
