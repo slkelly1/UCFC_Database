@@ -1,8 +1,3 @@
-module.exports = {
-  presets: [
-    require(__tailwindCSSTaxonPagesConfigPath)
-  ]
-}
 const round = (num) =>
   num
     .toFixed(7)
