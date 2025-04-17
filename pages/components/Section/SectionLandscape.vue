@@ -11,6 +11,8 @@
             <span class="text-lg sm:text-xl text-white px-4"
               >Check out all the specimens in our collections!</span
             >
+<span class="text-lg sm:text-xl text-white px-4">Either serach by taxa below or start browsing
+            <a href="https://slkelly1.github.io/UCFC_Database/#/otus/1079019/overview">here</a>.</span>
             <div class="p-3 bg-black bg-opacity-20 w-full max-w-lg box-border rounded-lg">
               <AutocompleteOtu
                 autofocus
