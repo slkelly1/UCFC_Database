@@ -2,9 +2,6 @@
     <div class="h-full">
       <SectionLandscape />
       <SectionData />
-      <hr class="border-base-muted" />
-      <SectionDescription />
-      <hr class="border-base-muted" />
       <SectionAnnouncements />
       <SectionTerms class="drop-shadow" />
     </div>
@@ -12,7 +9,6 @@
   <script setup>
   import SectionData from './components/Section/SectionData.vue'
   import SectionLandscape from './components/Section/SectionLandscape.vue'
-  import SectionDescription from './components/Section/SectionDescription.vue'
   import SectionTerms from './components/Section/SectionTerms.vue'
-  import SectionLimitations from './components/Section/SectionLimitations.vue'
+    import SectionAnnouncements from './components/Section/SectionAnnouncements.vue'
   </script>

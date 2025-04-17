@@ -30,7 +30,6 @@
         Learn how to collaborate with the 
         World Ichneumonidae Database. 
         Contact information, technical details, and more are available 
-        <RouterLink to="about">here</RouterLink>.
         </p>
   
       </div>
