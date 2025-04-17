@@ -4,7 +4,7 @@
         <h2>Referencing this website</h2>
         <p>
           When referencing this website, please use the following format:
-          Dal Pos <i>et al</i>. The World Ichneumonidae Database
+          Kelly <i>et al</i>. The World Ichneumonidae Database
           [retrieval date]. &lt;
           <a :href="project_url">
             {{ project_url }}
