@@ -10,3 +10,6 @@
     
     - label: Recent Addition
       link: /newspecimens
+    
+    - label: Taxonomy
+      link: /TaxonomyPage
