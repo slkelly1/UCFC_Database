@@ -20,7 +20,7 @@ taxa_page:
     panels:
       - - - panel:specimen-records
   field_occurrences:
-    rank_group: ['SpeciesGroup']
+    rank_group: ['GenusGroup', 'SpeciesGroup']
     panels:
       - - - panel:field-occurrences
   inaturalist:
