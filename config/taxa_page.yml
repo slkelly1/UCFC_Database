@@ -16,11 +16,11 @@ taxa_page:
           - panel:gbif
           - panel:statistics
   specimen_records:
-    rank_group: [ 'FamilyGroup', 'GenusGroup', 'SpeciesGroup']
+    rank_group: ['SpeciesGroup']
     panels:
       - - - panel:specimen-records
   field_occurrences:
-    rank_group: ['GenusGroup', 'SpeciesGroup']
+    rank_group: ['SpeciesGroup']
     panels:
       - - - panel:field-occurrences
   inaturalist:
