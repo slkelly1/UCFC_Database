@@ -8,4 +8,6 @@
 !public
 !public/**
 !README.md
+!.github
+!.github/**
 config/**/*.development.yml
