@@ -10,3 +10,6 @@
     
     - label: Recent Addition
       link: /newspecimens
+    
+    - label: Search DwC
+      link: /resources/tw/filter/dwc_otus
