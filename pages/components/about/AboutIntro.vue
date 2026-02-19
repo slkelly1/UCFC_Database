@@ -39,7 +39,7 @@
         GBIF Publisher Page
       </a>
       <a
-        href="https://collections.ucf.edu/"
+        href="https://sciences.ucf.edu/biology/bugcloset/"
         target="_blank"
         rel="noopener"
         class="px-6 py-3 bg-yellow-400 text-white border border-yellow-500 rounded-lg shadow-lg font-medium hover:bg-yellow-500 hover:brightness-105 transition"
