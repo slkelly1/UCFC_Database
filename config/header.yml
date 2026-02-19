@@ -13,3 +13,6 @@
     
     - label: Search DwC
       link: /resources/tw/filter/dwc_otus
+
+    - label: News
+      link: /news

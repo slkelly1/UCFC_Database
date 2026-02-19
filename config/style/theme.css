@@ -5,7 +5,7 @@
   --color-primary-content: 30, 30, 30; /* dark black, slightly softer than pure 0 */
 
   /* Secondary Accent */
-  --color-secondary: 14, 165, 233; /* nice blue accent */
+  --color-secondary: 204, 85, 0; /* nice wodd accent */
   --color-secondary-content: 255, 255, 255;
 
   /* Base Colors */
@@ -38,7 +38,7 @@
   --color-primary: 20, 20, 20;
   --color-primary-content: 255, 221, 51; /* bright UCFC yellow */
 
-  --color-secondary: 14, 165, 233;
+  --color-secondary: 204, 85, 0;
   --color-secondary-content: 255, 255, 255;
 
   --color-base-background: 20, 20, 20; /* very dark background */

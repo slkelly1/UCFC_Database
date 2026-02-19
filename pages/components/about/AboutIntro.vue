@@ -1,12 +1,12 @@
 <template>
   <section
-    class="container mx-auto max-w-screen-xl py-12 px-8 sm:px-6 lg:px-10 bg-[rgb(var(--color-base-foreground))] rounded-xl shadow-2xl mt-12"
+    class="container dark:bg-gray-100 mx-auto max-w-screen-xl py-12 px-8 sm:px-6 lg:px-10 bg-[rgb(var(--color-base-foreground))] border border-gray-200 rounded-xl shadow-2xl mt-12"
   >
     <!-- Heading with subtle underline -->
-    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight relative inline-block mb-10 text-[rgb(var(--color-base-lighter))]">
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight relative inline-block mb-10 text-[rgb(var(--color-base-lighter))] dark:text-gray-700">
       About the UCFC
       <span
-        class="absolute left-0 -bottom-1 h-1 w-20 bg-[rgb(var(--color-primary))] rounded"
+        class="absolute left-0 -bottom-1 h-1 w-20 bg-[rgb(var(--color-primary))] dark:bg-yellow-500 rounded"
         aria-hidden="true"
       ></span>
     </h1>
