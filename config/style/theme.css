@@ -1,46 +1,55 @@
+/* Light Mode */
 :root {
-  --color-primary: 0, 0, 0;
-  --color-primary-content: 255, 255, 0;
+  /* Primary Branding */
+  --color-primary: 245, 200, 60; /* warm UCFC yellow */
+  --color-primary-content: 30, 30, 30; /* dark black, slightly softer than pure 0 */
 
-  --color-secondary: 14, 165, 233;
+  /* Secondary Accent */
+  --color-secondary: 14, 165, 233; /* nice blue accent */
   --color-secondary-content: 255, 255, 255;
 
-  --color-base-foreground: 255, 255, 255;
-  --color-base-background: 245, 247, 251;
-  --color-base-muted: 226, 232, 240;
-  --color-base-soft: 156, 163, 175;
-  --color-base-lighter: 55, 65, 81;
-  --color-base-border: 203, 213, 225;
-  --color-base-content: 0, 0, 0;
+  /* Base Colors */
+  --color-base-foreground: 247, 247, 247;
+  --color-base-background: 250, 250, 250; /* soft white */
+  --color-base-muted: 230, 230, 230; /* light gray for subtle backgrounds */
+  --color-base-soft: 150, 150, 150; /* medium gray for text or borders */
+  --color-base-lighter: 90, 90, 90; /* dark gray for headings or muted content */
+  --color-base-border: 200, 200, 200; /* subtle border */
+  --color-base-content: 0, 0, 0; /* default content color */
 
-  --color-map-georeference: 239, 68, 68;
-  --color-map-aggregate: 3, 115, 22;
-  --color-map-asserted: 249, 115, 22;
-  --color-map-type-material: 51, 136, 255;
-  --color-map-collection-object: 239, 68, 68;
+  /* Map Colors */
+  --color-map-georeference: 255, 99, 71; /* warm red, more modern */
+  --color-map-aggregate: 16, 185, 129; /* fresh green */
+  --color-map-asserted: 255, 159, 28; /* orange-yellow */
+  --color-map-type-material: 79, 70, 229; /* vivid indigo */
+  --color-map-collection-object: 255, 99, 71; /* same red for consistency */
 
-  --color-scrollbar-thumb: 156, 163, 175;
-  --color-scrollbar-track: 229, 231, 235;
+  /* Scrollbar */
+  --color-scrollbar-thumb: 150, 150, 150; /* neutral gray */
+  --color-scrollbar-track: 240, 240, 240;
 
+  /* Map Opacity */
   --color-map-shape-opacity: 0.5;
   --color-map-marker-opacity: 0.75;
 }
 
+/* Dark Mode */
 .dark {
-  --color-primary: 23, 23, 23;
-  --color-primary-content: 255, 255, 255;
-  
+  --color-primary: 20, 20, 20;
+  --color-primary-content: 255, 221, 51; /* bright UCFC yellow */
+
   --color-secondary: 14, 165, 233;
   --color-secondary-content: 255, 255, 255;
 
-  --color-base-background: 23, 23, 23;
-  --color-base-foreground: 38,38,38;
-  --color-base-muted: 48, 48, 48;
-  --color-base-soft: 200, 200, 200;
+  --color-base-background: 20, 20, 20; /* very dark background */
+  --color-base-foreground: 40, 40, 40;
+  --color-base-muted: 60, 60, 60;
+  --color-base-soft: 180, 180, 180;
   --color-base-lighter: 220, 220, 220;
-  --color-base-border: 38, 38, 38;
-  --color-base-content: 255, 255, 255;
+  --color-base-border: 50, 50, 50;
+  --color-base-content: 255, 221, 51; /* yellow content for contrast */
 
-  --color-scrollbar-thumb: 156, 163, 175;
-  --color-scrollbar-track: 55, 65, 81;
+  /* Scrollbar */
+  --color-scrollbar-thumb: 150, 150, 150;
+  --color-scrollbar-track: 35, 35, 35;
 }
