@@ -1,32 +1,49 @@
 <template>
-    <section>
-      <div class="relative box-border">
-        <ImageCarrousel>
-          <div
-            class="flex flex-col justify-center sm:items-center w-full h-full gap-4 bg-black bg-opacity-10"
-          >
-            <span class="text-3xl sm:text-4xl px-4 font-medium text-white">{{
-              project_name
-            }}</span>
-            <span class="text-lg sm:text-xl text-white px-4"
-              >Check out all the specimens in our collections!</span
-            >
-<span class="text-lg sm:text-xl text-white px-4">Search by taxa below or start browsing
-            <a href="https://slkelly1.github.io/UCFC_Database/#/otus/1079019/overview" class="hover:underline">here</a>.</span>
-            <div class="p-3 bg-black bg-opacity-20 w-full max-w-lg box-border rounded-lg">
-              <AutocompleteOtu
-                autofocus
-                class="w-full"
-                placeholder="Search by taxon name..."
-              />
-            </div>
-          </div>
-        </ImageCarrousel>
+  <section 
+    class="relative bg-gradient-to-b from-gray-50 to-white 
+           dark:from-gray-900 dark:to-gray-800 
+           px-3 md:px-6 py-12 md:py-20"
+  >
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- Left Column: Hero Image -->
+      <div class="flex justify-center md:justify-start">
+        <img 
+          src="/images/epsilosimple_logo.png" 
+          alt="UCFC Arthropod Collection"
+          class="rounded-xl w-full max-w-md object-cover shadow-lg border-gray-300 bg-gray-100 dark:bg-gray-300 border border-gray-200 dark:border-gray-700"
+        > 
+        
       </div>
-    </section>
-  </template>
-  
-  <script setup>
-  import ImageCarrousel from '../ImageCarrousel.vue'
-  const { project_name } = __APP_ENV__
-  </script>
+
+      <!-- Right Column: Intro Text + SectionData -->
+      <div class="space-y-6 text-left">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+          Welcome to the UCFC Collection of Arthropods
+        </h2>
+
+        <p class="text-lg text-gray-700 dark:text-gray-300">
+          Officially known as the 
+          <strong>University of Central Florida Collection of Arthropods (UCFC)</strong>, 
+          we are one of the largest fully databased arthropod collections in the world.
+        </p>
+
+        <p class="text-lg text-gray-700 dark:text-gray-300">
+          With over <strong>575,000 specimen records</strong> — and more added daily — 
+          the UCFC supports research, teaching, biodiversity discovery, and public engagement.
+        </p>
+
+        <!-- Replace CTA with SectionData -->
+
+          <SectionData />
+<GbifBar />
+      </div>
+
+    </div>
+  </section>
+</template>
+
+<script setup>
+import GbifBar from './GbifBar.vue';
+import SectionData from './SectionData.vue';
+</script>

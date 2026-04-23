@@ -1,15 +1,16 @@
 <template>
   <div class="h-full">
     <SectionLandscape />
-    <SectionData />
-    <SectionIntroduction />
-    <SectionTerms class="drop-shadow" />
+        <SectionSearch />
+  
+
+    <GbifLatestLiterature />
+
   </div>
 </template>
 
 <script setup>
-import SectionData from './components/Section/SectionData.vue';
+import GbifLatestLiterature from './components/Section/GbifLatestLiterature.vue';
 import SectionLandscape from './components/Section/SectionLandscape.vue';
-import SectionTerms from './components/Section/SectionTerms.vue';
-import SectionIntroduction from './components/Section/SectionIntroduction.vue';
+import SectionSearch from './components/Section/SectionSearch.vue';
 </script>
