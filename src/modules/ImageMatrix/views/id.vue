@@ -6,7 +6,17 @@
     />
     <VCardHeader>
       <div class="flex flex-row justify-between items-center">
-        <h1>{{ observationMatrix.name }}</h1>
+        <div v-if="observationMatrix">
+          <h1>
+            {{ observationMatrix.name }}
+            <span
+              v-if="citation?.citation_source_body"
+              class="text-sm font-normal"
+            >
+              - {{ citation.citation_source_body }}
+            </span>
+          </h1>
+        </div>
         <VPagination
           v-if="pagination"
           :total="pagination.total"
@@ -18,17 +28,19 @@
     </VCardHeader>
     <VCardContent>
       <div class="image-matrix overflow-auto">
-        <VTable>
+        <VTable class="border-collapse border-spacing-0">
           <caption class="sr-only">
             Image matrix
           </caption>
           <VTableHeader>
             <VTableHeaderRow class="bg-base-foreground">
-              <VTableBodyCell class="border-b" />
+              <VTableBodyCell
+                class="sticky top-0 border-r-2 bg-base-foreground"
+              />
               <VTableHeaderCell
                 v-for="{ id, label } in descriptors"
                 :key="id"
-                class="border-l border-b"
+                class="border-l min-w-28 sticky top-0 bg-base-foreground z-10"
                 scope="col"
               >
                 {{ label }}
@@ -37,7 +49,9 @@
           </VTableHeader>
           <VTableBody>
             <VTableBodyRow v-for="item in list">
-              <VTableBodyCell class="border-b text-base-content h-20">
+              <VTableBodyCell
+                class="border-b border-r-2 text-base-content h-20"
+              >
                 <RouterLink
                   :to="{ name: 'otus-id', params: { id: item.id } }"
                   v-html="item.label"
@@ -63,7 +77,6 @@ import { useRoute } from 'vue-router'
 import { makeImageObject } from '../utils/makeImageObject.js'
 import ListImage from '../components/ListImages.vue'
 import { ObservationMatrixImage } from '../services/Keys.js'
-
 const PER = 50
 
 const list = ref([])
@@ -72,19 +85,24 @@ const descriptors = ref([])
 const observationMatrix = ref({})
 const route = useRoute()
 const pagination = ref()
+const citation = ref()
 
-const matrixId = route.params.id
+const matrixId = route.params.id || 0
+const otuFilter = route.query?.otu_filter
 
 async function loadMatrix(id, page = 1) {
   isLoading.value = true
 
   try {
     const { data } = await ObservationMatrixImage.find(id, {
+      otu_filter: otuFilter,
       page,
       per: PER
     })
 
     observationMatrix.value = data.observation_matrix
+    citation.value = data.observation_matrix_citation
+
     descriptors.value = data.list_of_descriptors.map((item) => ({
       label: item.name,
       id: item.id
@@ -129,5 +147,10 @@ loadMatrix(route.params.id)
 <style scoped>
 .image-matrix {
   max-height: calc(100vh - 12rem);
+}
+
+.image-matrix thead th,
+.image-matrix thead td {
+  box-shadow: inset 0 -2px 0 0 #e5e7eb;
 }
 </style>

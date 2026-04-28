@@ -18,9 +18,10 @@
 
       <!-- Right Column: Intro Text + SectionData -->
       <div class="space-y-6 text-left">
-        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
-          Welcome to the UCFC Collection of Arthropods
-        </h2>
+<h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+  Welcome to the <br>
+  <span class="text-orange-500">Bug Closet</span> Database
+</h2>
 
         <p class="text-lg text-gray-700 dark:text-gray-300">
           Officially known as the 
