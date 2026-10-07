@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "^2.19.2",
+    "@jlpereira/taxonpages-plugin-gbif-citation-widget": "^0.0.1",
     "@nuxt/devalue": "^2.0.2",
     "@sfgrp/distinguish": "^0.4.2",
     "@sfgrp/pinpoint": "^0.0.12",

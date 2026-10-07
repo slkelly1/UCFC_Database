@@ -6,18 +6,17 @@
         Latest Publications Using UCFC Data
       </h3>
 
-      <iframe 
-        src="https://www.gbif.org/api/widgets/literature/latest?gbifDatasetKey=262f8270-f9c2-4bc6-a562-8ed71c0790e6"
-        scrolling="no"
-        frameborder="0"
-        allowtransparency="true"
-        allowfullscreen="false"
-        class="w-full h-[350px] rounded-lg border border-gray-200 dark:border-gray-700 bg-white"
-      ></iframe>
+      <VGbifCitationWidget
+        query="gbifDatasetKey=262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+        :per-page="20"
+        :height="350"
+        class="rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
+      />
 
     </div>
   </section>
 </template>
 
 <script setup>
+import VGbifCitationWidget from '@jlpereira/taxonpages-plugin-gbif-citation-widget/components/VGbifCitationWidget.vue'
 </script>

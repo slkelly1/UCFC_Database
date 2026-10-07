@@ -3,9 +3,9 @@
     <div class="max-w-6xl mx-auto flex items-center gap-4">
 
       <!-- GBIF Logo -->
-      <img 
-        src="/images/GBIF.png" 
-        alt="GBIF" 
+      <img
+        src="/images/GBIF.png"
+        alt="GBIF"
         class="h-6 opacity-80 dark:opacity-90"
       />
 
@@ -14,24 +14,22 @@
         Citations & DOI via GBIF
       </span>
 
-      <!-- GBIF Literature Badge -->
-      <iframe 
-        src="https://www.gbif.org/api/widgets/literature/button?gbifDatasetKey=262f8270-f9c2-4bc6-a562-8ed71c0790e6"
-        scrolling="no"
-        frameborder="0"
-        allowtransparency="true"
-        allowfullscreen="false"
-        class="w-[140px] h-[24px] ml-auto"
-      ></iframe>
+      <!-- GBIF Literature Badge (native, no iframe) -->
+      <div class="w-[140px] ml-auto rounded overflow-hidden">
+        <VGbifCitationWidgetButton
+          query="gbifDatasetKey=262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+        />
+      </div>
 
       <!-- DOI Badge -->
-      <a 
-        href="https://doi.org/10.15468/kyulwg" 
+      <a
+        href="https://doi.org/10.15468/kyulwg"
         target="_blank"
+        rel="noopener noreferrer"
         class="shrink-0"
       >
-        <img 
-          src="https://img.shields.io/badge/DOI-10.15468%2Fkyulwg-orange.svg" 
+        <img
+          src="https://img.shields.io/badge/DOI-10.15468%2Fkyulwg-orange.svg"
           alt="Dataset DOI"
           class="h-6"
         />
@@ -42,4 +40,5 @@
 </template>
 
 <script setup>
+import VGbifCitationWidgetButton from '@jlpereira/taxonpages-plugin-gbif-citation-widget/components/VGbifCitationWidgetButton.vue'
 </script>
