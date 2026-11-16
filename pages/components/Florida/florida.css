@@ -1,0 +1,128 @@
+/* Shared styles for the UCFC "Florida" pages (all classes start with fl-) */
+.fl-page {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+.fl-kicker {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(var(--fl-teal-deep));
+  margin: 0 0 0.4rem;
+}
+.fl-h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: rgb(var(--fl-ink));
+  margin: 0;
+}
+.fl-h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: rgb(var(--fl-ink));
+  margin: 0;
+}
+.fl-h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(var(--fl-ink));
+  margin: 0 0 0.9rem;
+}
+.fl-lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgb(var(--color-base-lighter));
+  margin: 0.75rem 0 0;
+}
+.fl-muted {
+  color: rgb(var(--color-base-soft));
+}
+.fl-card {
+  background: rgb(var(--fl-card));
+  border-radius: 18px;
+  padding: 1.35rem 1.35rem 1.2rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 14px 32px -24px rgb(0 0 0 / 0.35);
+}
+.fl-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.fl-bars li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 11rem) 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+}
+.fl-bar-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(var(--fl-ink));
+}
+.fl-bar-label small {
+  color: rgb(var(--color-base-soft));
+}
+.fl-bar-track {
+  height: 0.6rem;
+  border-radius: 999px;
+  background: rgb(var(--fl-teal-soft));
+  overflow: hidden;
+}
+.fl-bar {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: rgb(var(--fl-teal));
+  transition: width 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.fl-bar-n {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: rgb(var(--color-base-soft));
+  text-align: right;
+}
+.fl-link {
+  color: rgb(var(--fl-teal));
+  font-weight: 600;
+}
+.fl-link:hover {
+  text-decoration: underline;
+}
+.fl-stats {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  margin: 1.75rem 0;
+}
+.fl-stat {
+  padding: 1.05rem 1.2rem;
+  border-radius: 16px;
+  background: rgb(var(--fl-teal-soft));
+}
+.fl-stat b {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: rgb(var(--fl-ink));
+  font-variant-numeric: tabular-nums;
+}
+.fl-stat span {
+  font-size: 0.82rem;
+  color: rgb(var(--color-base-lighter));
+}
+.fl-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}

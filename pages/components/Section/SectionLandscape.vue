@@ -1,8 +1,6 @@
 <template>
   <section 
-    class="relative bg-gradient-to-b from-gray-50 to-white 
-           dark:from-gray-900 dark:to-gray-800 
-           px-3 md:px-6 py-12 md:py-20"
+    class="fl-hero relative px-3 md:px-6 py-12 md:py-20"
   >
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
@@ -20,7 +18,7 @@
       <div class="space-y-6 text-left">
 <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
   Welcome to the <br>
-  <span class="text-orange-500">Bug Closet</span> Database
+  <span class="fl-hero-accent">Bug Closet</span> Database
 </h2>
 
         <p class="text-lg text-gray-700 dark:text-gray-300">
@@ -48,3 +46,15 @@
 import GbifBar from './GbifBar.vue';
 import SectionData from './SectionData.vue';
 </script>
+
+<style scoped>
+/* Florida morning: Gulf teal fading into sand */
+.fl-hero {
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgb(var(--fl-sun) / 0.18) 0%, transparent 55%),
+    linear-gradient(180deg, rgb(var(--fl-teal-soft)) 0%, rgb(var(--color-base-background)) 100%);
+}
+.fl-hero-accent {
+  color: rgb(var(--fl-coral));
+}
+</style>

@@ -1,30 +1,42 @@
+/* UCFC — UCF black and gold.
+   UCF gold #FFC904, black, with a deeper gold for text and charts on light backgrounds. */
+
 /* Light Mode */
 :root {
-  /* Primary Branding (UCF-inspired soft gold) */
-  --color-primary: 240, 196, 85;
-  --color-primary-content: 50, 45, 35; /* dark brown instead of cream */
+  --color-primary: 17, 17, 17; /* UCF black: header and buttons */
+  --color-primary-content: 255, 201, 4; /* UCF gold on black */
 
-  /* Secondary Accent (muted wood tone) */
-  --color-secondary: 180, 95, 40;
-  --color-secondary-content: 255, 250, 240;
+  --color-secondary: 150, 108, 0; /* deep gold: links on white */
+  --color-secondary-content: 255, 255, 255;
 
-  /* Base Colors (slightly warm grays) */
-  --color-base-background: 252, 250, 245; /* warm white */
-  --color-base-foreground: 245, 242, 235;
-  --color-base-muted: 230, 225, 215;
-  --color-base-soft: 140, 135, 125;
-  --color-base-lighter: 85, 80, 70;
-  --color-base-border: 210, 205, 195;
-  --color-base-content: 25, 22, 18;
+  --color-base-background: 250, 249, 246;
+  --color-base-foreground: 255, 255, 255;
+  --color-base-muted: 234, 231, 224;
+  --color-base-soft: 120, 117, 110;
+  --color-base-lighter: 70, 68, 64;
+  --color-base-border: 220, 216, 206;
+  --color-base-content: 20, 20, 20;
 
-  /* Map Colors (slightly softened) */
-  --color-map-georeference: 230, 90, 70;
-  --color-map-aggregate: 34, 160, 120;
-  --color-map-asserted: 240, 170, 60;
+  /* Accents used by the Florida, Campus and Numbers pages */
+  --fl-teal: 191, 145, 0; /* gold for bars and the map */
+  --fl-teal-deep: 120, 88, 0;
+  --fl-teal-soft: 255, 243, 196;
+  --fl-coral: 17, 17, 17; /* black highlight */
+  --fl-palmetto: 110, 108, 102; /* grey */
+  --fl-sun: 255, 201, 4;
+  --fl-sand: 236, 233, 226;
+  --fl-ink: 17, 17, 17;
+  --fl-card: 255, 255, 255;
+  --fl-gold: 255, 201, 4;
+  --fl-black: 17, 17, 17;
+
+  /* Map Colors */
+  --color-map-georeference: 230, 160, 0;
+  --color-map-aggregate: 17, 17, 17;
+  --color-map-asserted: 255, 201, 4;
   --color-map-type-material: 90, 80, 200;
-  --color-map-collection-object: 230, 90, 70;
+  --color-map-collection-object: 230, 160, 0;
 
-  /* Scrollbar */
   --color-scrollbar-thumb: 160, 155, 145;
   --color-scrollbar-track: 235, 232, 225;
 
@@ -34,23 +46,32 @@
 
 /* Dark Mode */
 .dark {
-  /* Keep gold as identity (IMPORTANT FIX) */
-  --color-primary: 240, 196, 85;
-  --color-primary-content: 30, 25, 15;
+  --color-primary: 0, 0, 0;
+  --color-primary-content: 255, 201, 4;
 
-  --color-secondary: 180, 95, 40;
-  --color-secondary-content: 255, 245, 230;
+  --color-secondary: 255, 201, 4;
+  --color-secondary-content: 17, 17, 17;
 
-  /* Warm dark neutrals (not cold gray!) */
-  --color-base-background: 28, 26, 22;
-  --color-base-foreground: 40, 38, 32;
-  --color-base-muted: 60, 58, 50;
-  --color-base-soft: 170, 165, 150;
-  --color-base-lighter: 210, 205, 190;
-  --color-base-border: 55, 52, 45;
-  --color-base-content: 235, 225, 200;
+  --color-base-background: 16, 16, 16;
+  --color-base-foreground: 26, 26, 26;
+  --color-base-muted: 44, 44, 42;
+  --color-base-soft: 165, 160, 150;
+  --color-base-lighter: 212, 208, 200;
+  --color-base-border: 52, 52, 48;
+  --color-base-content: 240, 236, 226;
 
-  /* Scrollbar */
-  --color-scrollbar-thumb: 120, 115, 105;
-  --color-scrollbar-track: 35, 33, 28;
+  --fl-teal: 255, 201, 4;
+  --fl-teal-deep: 255, 214, 80;
+  --fl-teal-soft: 50, 42, 10;
+  --fl-coral: 245, 245, 240;
+  --fl-palmetto: 170, 166, 158;
+  --fl-sun: 255, 201, 4;
+  --fl-sand: 38, 38, 36;
+  --fl-ink: 240, 236, 226;
+  --fl-card: 26, 26, 26;
+  --fl-gold: 255, 201, 4;
+  --fl-black: 0, 0, 0;
+
+  --color-scrollbar-thumb: 90, 88, 84;
+  --color-scrollbar-track: 20, 20, 20;
 }
