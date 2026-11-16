@@ -5,14 +5,27 @@
     - label: Home
       link: /
 
-    - label: About
-      link: /about
-    
-    - label: Recent Addition
-      link: /newspecimens
-    
-    - label: Search DwC
-      link: /resources/tw/filter/dwc_otus
+    - label: Explore
+      submenu:
+        - label: Tree of life
+          link: /tree
+        - label: Florida by county
+          link: /florida
+        - label: Insects of the UCF campus
+          link: /campus
+        - label: The collection in numbers
+          link: /numbers
 
-    - label: News
-      link: /news
+    - label: Specimens
+      submenu:
+        - label: Search the specimens
+          link: /search
+        - label: Recent additions
+          link: /newspecimens
+
+    - label: About
+      submenu:
+        - label: About the UCFC
+          link: /about
+        - label: News
+          link: /news
